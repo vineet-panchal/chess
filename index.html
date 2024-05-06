@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="images/x-icon" href="./assets/icon.png">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Chessmate</title>
+</head>
+<body>
+  <!-- <section class="main-title">
+    <h1>Chessmate</h1>
+  </section> -->  
+  <container class="chess-card-ctr">
+    <container class="chessboard-ctr">
+      <ul>
+        <!--creating the grid/chessboard-->
+        <div class="row" id="row8">
+          <li class="square" id="801">blackRook</li>
+          <li class="square" id="802">blackKnight</li>
+          <li class="square" id="803">blackBishop</li>
+          <li class="square" id="804">blackQueen</li>
+          <li class="square" id="805">blackKing</li>
+          <li class="square" id="806">blackBishop</li>
+          <li class="square" id="807">blackKnight</li>
+          <li class="square" id="808">blackRook</li>
+        </div>
+        <div class="row" id="row7">
+          <li class="square" id="701">blackPawn</li>
+          <li class="square" id="702">blackPawn</li>
+          <li class="square" id="703">blackPawn</li>
+          <li class="square" id="704">blackPawn</li>
+          <li class="square" id="705">blackPawn</li>
+          <li class="square" id="706">blackPawn</li>
+          <li class="square" id="707">blackPawn</li>
+          <li class="square" id="708">blackPawn</li>
+        </div>
+        <div class="row" id="row6">
+          <li class="square" id="601"></li>
+          <li class="square" id="602"></li>
+          <li class="square" id="603"></li>
+          <li class="square" id="604"></li>
+          <li class="square" id="605"></li>
+          <li class="square" id="606"></li>
+          <li class="square" id="607"></li>
+          <li class="square" id="608"></li>
+        </div>
+        <div class="row" id="row5">
+          <li class="square" id="501"></li>
+          <li class="square" id="502"><li>
+          <li class="square" id="503"></li>
+          <li class="square" id="504"></li>
+          <li class="square" id="505"></li>
+          <li class="square" id="506"></li>
+          <li class="square" id="507"></li>
+          <li class="square" id="508"></li>
+        </div>
+        <div class="row" id="row4">
+          <li class="square" id="401"></li>
+          <li class="square" id="402"></li>
+          <li class="square" id="403"></li>
+          <li class="square" id="404"></li>
+          <li class="square" id="405"></li>
+          <li class="square" id="406"></li>
+          <li class="square" id="407"></li>
+          <li class="square" id="408"></li>
+        </div>
+        <div class="row" id="row3">
+          <li class="square" id="301"></li>
+          <li class="square" id="302"></li>
+          <li class="square" id="303"></li>
+          <li class="square" id="304"></li>
+          <li class="square" id="305"></li>
+          <li class="square" id="306"></li>
+          <li class="square" id="307"></li>
+          <li class="square" id="308"></li>
+        </div>
+        <div class="row" id="row2">
+          <li class="square" id="201">whitePawn</li>
+          <li class="square" id="202">whitePawn</li>
+          <li class="square" id="203">whitePawn</li>
+          <li class="square" id="204">whitePawn</li>
+          <li class="square" id="205">whitePawn</li>
+          <li class="square" id="206">whitePawn</li>
+          <li class="square" id="207">whitePawn</li>
+          <li class="square" id="208">whitePawn</li>
+        </div>
+        <div class="row" id="row1">
+          <li class="square" id="101">whiteRook</li>
+          <li class="square" id="102">whiteKnight</li>
+          <li class="square" id="103">whiteBishop</li>
+          <li class="square" id="104">whiteQueen</li>
+          <li class="square" id="105">whiteKing</li>
+          <li class="square" id="106">whiteBishop</li>
+          <li class="square" id="107">whiteKnight</li>
+          <li class="square" id="108">whiteRook</li>
+        </div>
+      </ul>
+    </container>
+    <container class="card-ctr">
+      <h1 id="card-title">White's Turn</h1>
+      <hr id="card-line">
+      <h6 id="card-subtitle">Make a valid move. Enter the piece to move, the current position of the piece, and the next position of that piece.</h6>
+      <input id="card-input-piece" type="text" placeholder="Piece To Move, Ex: Bishop or bishop" autocomplete="off"><br>
+      <input id="card-input-fromPOS" type="text" placeholder="Current Position, Ex: A4" autocomplete="off"><br>
+      <input id="card-input-toPOS" type="text" placeholder="Target Position, Ex: E5" autocomplete="off"><br>
+      <button id="card-btn"><span class="btn-title" id="btn-title">Move Piece</span></button>
+    </container>
+  </container>
+  <script src="app.js"></script>
+</body>
+</html>
